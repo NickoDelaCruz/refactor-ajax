@@ -4,13 +4,13 @@
     <title>Week3CodeReview</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
   </head>
   <nav>
     <div class="nav-wrapper">
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><%= link_to "Cart | Total items: #{ cart_items }", cart_path %></li>
+        <li id="update_cart"><%= link_to "Cart | Total items: #{ cart_items }", cart_path %></li>
         <li><%= link_to "See all products", products_path %></li>
         <% if current_user %>
           <li><%= current_user.email %></li>
