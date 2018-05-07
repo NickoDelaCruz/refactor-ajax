@@ -23,11 +23,12 @@ default: &default
 
 development:
   <<: *default
-  database: ajax_refactor_development
+  database: test_development
   username: postgres
   password: happy123
   pool: 5
   timeout: 5000
+
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -61,11 +62,12 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: ajax_refactor_test
+  database: test_test
   username: postgres
   password: happy123
   pool: 5
   timeout: 5000
+
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -88,7 +90,7 @@ test:
 #
 production:
   <<: *default
-  database: ajax_refactor_production
+  database: test_production
   username: postgres
   password: happy123
   pool: 5
