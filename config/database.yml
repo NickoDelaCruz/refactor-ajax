@@ -23,11 +23,8 @@ default: &default
 
 development:
   <<: *default
-  database: test_development
-  username: postgres
-  password: happy123
-  pool: 5
-  timeout: 5000
+  database: w3_development
+
 
 
   # The specified database role being used to connect to postgres.
@@ -62,11 +59,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: test_test
-  username: postgres
-  password: happy123
-  pool: 5
-  timeout: 5000
+  database: w3_test
 
 
 # As with config/secrets.yml, you never want to store sensitive information,
@@ -90,8 +83,4 @@ test:
 #
 production:
   <<: *default
-  database: test_production
-  username: postgres
-  password: happy123
-  pool: 5
-  timeout: 5000
+  database: w3_production
