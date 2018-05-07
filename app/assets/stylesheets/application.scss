@@ -15,3 +15,82 @@
  */
 
 @import "materialize";
+
+
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+
+h1 {
+ color: lightgreen;
+}
+
+
+div
+{
+  font-family: Raleway;
+  padding: 75px 16px;
+	text-align: center;
+}
+
+div a
+{
+    color: lightgreen;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    position: relative;
+    cursor: pointer;
+}
+.black
+{
+    background: black;
+}
+
+div.animation a:before, div.animation a:after
+{
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+div.animation a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.animation a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.animation a:hover:before, div.animation a:hover:after
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+
+/*
+footer  */
+
+/* footer {
+  marigin-top: -100%;
+  width: 100%;
+  background-color: black;
+  padding: 60px 0px;
+} */
+
+footer nav {
+  float: right;
+}
+
+footer nav ul {
+  margin-top: 73px;
+}
