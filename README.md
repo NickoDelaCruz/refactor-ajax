@@ -86,7 +86,7 @@ $ rspec
 
 ## Bugs
 
-N/A
+Styling conflits with some messages (will make it prettier)
 
 ## Built With
 
